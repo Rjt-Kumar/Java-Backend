@@ -1,4 +1,4 @@
-package com.Configurations.XML;
+package com.Configurations.XML.Col;
 import java.util.*;
 public class Student {
 

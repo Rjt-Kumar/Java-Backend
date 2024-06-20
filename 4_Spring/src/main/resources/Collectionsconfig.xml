@@ -4,7 +4,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="student1" class="com.Configurations.XML.Student">
+    <bean id="student1" class="com.Configurations.XML.Col.Student">
         <property name="name" value="Rajat"/>
         <property name="UID" value="21BCS2871"/>
         <property name="marks" value="19"/>
