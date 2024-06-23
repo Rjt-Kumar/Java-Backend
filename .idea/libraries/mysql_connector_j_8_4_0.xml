@@ -3,7 +3,10 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/Java Dependecies/usr/share/java/mysql-connector-j-8.4.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="http://www.springframework.org/schema/p" />
+      <root url="http://www.springframework.org/schema/p/spring-p.xsd" />
+    </JAVADOC>
     <SOURCES />
   </library>
 </component>

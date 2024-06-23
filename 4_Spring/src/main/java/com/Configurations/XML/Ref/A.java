@@ -6,6 +6,11 @@ public class A {
 
       private B obj;
 
+      public A(int x,B obj){
+          this.x = x;
+          this.obj = obj;
+      }
+
     public B getObj() {
         return obj;
     }

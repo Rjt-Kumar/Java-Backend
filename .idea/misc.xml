@@ -10,6 +10,10 @@
       </list>
     </option>
   </component>
+  <component name="ProjectResources">
+    <resource url="http://www.springframework.org/schema/beans/spring-beans.xsd" location="$PROJECT_DIR$" />
+    <resource url="http://www.springframework.org/schema/p" location="$PROJECT_DIR$/4_Spring/spring-beans.xsd" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
