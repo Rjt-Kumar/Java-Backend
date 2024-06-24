@@ -5,6 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="vehicle" class="org.example.Truck">
+
+
 <!--        <property name="tankCap" value="15l"></property>-->
         <constructor-arg value="13L"></constructor-arg>
     </bean>

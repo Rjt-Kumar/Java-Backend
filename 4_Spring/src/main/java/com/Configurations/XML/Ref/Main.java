@@ -10,7 +10,9 @@ public class Main {
             ApplicationContext contxt = new ClassPathXmlApplicationContext("RefConfig.xml");
             A obj = (A) contxt.getBean("aref");
 //          B bref = (B)contxt.getBean("bref");
+            C cobjec = (C)contxt.getBean("cref");
 
+            System.out.println(cobjec.toString());
             System.out.println(obj.sum());
         }catch(Exception e){
             System.out.println(e.getMessage());

@@ -3,13 +3,18 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                           http://www.springframework.org/schema/beans/spring-beans.xsd
-http://www.springframework.org/schema/p ">
 
-    <bean name="breef" class="com.Configurations.XML.Ref.B">
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/p http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-        <property name="y" value="90"/>
+    <bean name="bref" class="com.Configurations.XML.Ref.B" >
+        <property name="y" value="45"/>
+    </bean>
+
+    <bean class="com.Configurations.XML.Ref.C" name="cref" >
+        <property name="name" value="I am the C Class"/>
+        <property name="objec" ref="aref"/>
     </bean>
 
     <bean name="aref" class="com.Configurations.XML.Ref.A">
