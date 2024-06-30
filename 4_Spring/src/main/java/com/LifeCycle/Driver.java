@@ -8,8 +8,8 @@ public class Driver {
 
     public static void main(String[] args) throws Exception {
 
-//        AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/LifeCycle/LifeCycleBean.xml");
-//        context.registerShutdownHook();
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/LifeCycle/LifeCycleBean.xml");
+        context.registerShutdownHook();
 //        XMLBean bean = (XMLBean) context.getBean("XMLBean");
 //        System.out.println(bean);
 ////        bean.init();
@@ -18,8 +18,9 @@ public class Driver {
 //
 //        System.out.println(bean2);
 //        System.out.println("=....+>........+........++>>>>++++++>>>>>>");
-        BeanFactory context = new ClassPathXmlApplicationContext("com/LifeCycle/LifeCycleBean.xml");
-        AnnotBean bean3 = (AnnotBean) context.getBean("AnnotBean");
+
+        AnnotBean bean3 = context.getBean("AnnotBean",AnnotBean.class);
+
         System.out.println(bean3);
 
     }

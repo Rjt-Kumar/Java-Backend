@@ -17,4 +17,6 @@
     <bean class="com.Scope.SingletonBean" name="Single">
         <property name="name" value="Singleton"/>
     </bean>
+
+    <bean class="com.Autowiring.AutoWiredDriver" name="auto"></bean>
 </beans>
