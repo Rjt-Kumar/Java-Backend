@@ -11,8 +11,5 @@
         <module name="4_Spring" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="junit5-tutorial" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
