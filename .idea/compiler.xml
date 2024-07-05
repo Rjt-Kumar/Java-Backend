@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DSA_Classe" />
+        <module name="5_Spring_JDBC" />
         <module name="3_JDBC" />
-        <module name="4_Spring" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="4_SpringFundamentals" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
