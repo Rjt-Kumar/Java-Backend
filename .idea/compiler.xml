@@ -11,8 +11,5 @@
         <module name="3_JDBC" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="4_SpringFundamentals" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

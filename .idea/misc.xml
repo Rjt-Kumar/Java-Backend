@@ -16,7 +16,7 @@
     <resource url="http://www.springframework.org/schema/beans/spring-beans.xsd" location="$PROJECT_DIR$" />
     <resource url="http://www.springframework.org/schema/p" location="$PROJECT_DIR$/4_Spring/spring-beans.xsd" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
