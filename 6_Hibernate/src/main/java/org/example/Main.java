@@ -10,7 +10,7 @@ public class Main {
             System.out.println("Hello world!");
 //            Configuration conf = new Configuration();
             Configuration conf = new Configuration();
-            conf.configure("hibernate.cnf.xml");
+            conf.configure("org.Example/hibernate.cnf.xml");
             SessionFactory factory = conf.buildSessionFactory();
 
 //
@@ -24,21 +24,28 @@ public class Main {
 //
 //
 //            sess.close();
+            Address addrs = new Address("Mumbai","British");
+            Student first = new Student(1,"SKyy");
+
+            Address ad = new Address("London","UK");
+            Student second = new Student(2,"Bich");
+            second.setAddress(ad);
+            first.setAddress(addrs);
 
             Session session = factory.openSession();
-            Student second = getStud(2,"Chamaran","Behna");
+
             session.beginTransaction();
 
+            session.save(first);
             session.save(second);
             session.getTransaction().commit();
 
             session.close() ;
+            factory.close();
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
     }
 
-    public static Student getStud(int id,String name,String ciyt){
-        return new Student(id,name,ciyt);
-    }
+
 }

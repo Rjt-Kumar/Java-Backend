@@ -11,23 +11,13 @@ public class Student {
     @Id
     private int id;
     private String name;
-    private String city;
-
-    public Student(int id,String n,String ci){
-        this.id = id;
-        this.city = ci;
-        this.name = n;
+    private Address address;
+    public Address getAddress() {
+        return address;
     }
 
-    public Student(){
-     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public String getName() {
@@ -38,11 +28,20 @@ public class Student {
         this.name = name;
     }
 
-    public String getCity() {
-        return city;
+
+    public Student(int id,String name){
+      this.id = id;
+      this.name = name;
+    }
+    public String toString(){
+       return this.address + " " + this.id;
+    }
+    public int getId() {
+        return id;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setId(int id) {
+        this.id = id;
     }
+
 }
