@@ -1,19 +1,29 @@
 package com.Map.ManyMany;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 
 import java.util.*;
 
+@Entity
 public class Project {
 
     @Id
     private int pId;
     private String projectName;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "projects")
     List<Employe> employes;
+
+    public List<Employe> getEmployes() {
+        return employes;
+    }
+
+    public void setEmployes(List<Employe> employes) {
+        this.employes = employes;
+    }
 
     public Project(int pId, String projectName) {
         this.pId = pId;

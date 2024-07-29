@@ -15,11 +15,15 @@
         <property name="hibernate.hbm2ddl.auto">create</property>
 
         <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
 
 <!--        <mapping class="com.Annotations.Address"/>-->
-        <mapping package="com.Map"/>
+<!--        <mapping package="com.Map"/>-->
         <mapping class="com.Map.Answer"/>
         <mapping class="com.Map.Question"/>
+        <mapping class="com.Map.ManyMany.Employe"/>
+        <mapping class="com.Map.ManyMany.Project"/>
+
     </session-factory>
 
 

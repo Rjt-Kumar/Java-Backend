@@ -1,11 +1,10 @@
 package com.Map.ManyMany;
 
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 import java.util.*;
 
+@Entity
 public class Employe {
 
     @Id
@@ -13,7 +12,20 @@ public class Employe {
     private String name;
 
 
-    @ManyToMany
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
+    }
+
+    @ManyToMany()
+    @JoinTable(
+            name = "emp_pro",
+            joinColumns = @JoinColumn(name = "Project_ID"),
+            inverseJoinColumns = @JoinColumn(name = "Employr_ID")
+    )
     List<Project> projects;
 
     public Employe(int empId, List<Project> projects, String name) {
