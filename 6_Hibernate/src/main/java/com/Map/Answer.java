@@ -10,14 +10,16 @@ public class Answer{
     private String ans;
 
 //    One To One
-//    @OneToOne(mappedBy = "ans")
+//    @OneToOne(mappedBy = "ans" )
 //    private Question question;
 
 //    One to Many
 
       @ManyToOne
       private Question question;
-
+    public String toString(){
+        return "ID : " + id + ", Ans : " + ans;
+    }
     public Answer(int id, String ans, Question question) {
         this.id = id;
         this.ans = ans;

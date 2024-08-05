@@ -12,18 +12,21 @@
         <property name="connection.password">cdrRjt@123</property>
 
         <!--        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>-->
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
 <!--        <mapping class="com.Annotations.Address"/>-->
-<!--        <mapping package="com.Map"/>-->
+        <mapping package="com.Map"/>
         <mapping class="com.Map.Answer"/>
         <mapping class="com.Map.Question"/>
-        <mapping class="com.Map.ManyMany.Employe"/>
-        <mapping class="com.Map.ManyMany.Project"/>
+<!--        <mapping class="com.Map.ManyMany.Employe"/>-->
+<!--        <mapping class="com.Map.ManyMany.Project"/>-->
+<!--        <mapping class="org.example.Student"/>-->
+<!--        <mapping class="org.example.Address"/>-->
 
+           <mapping class="HQL.Student"/>
     </session-factory>
 
 

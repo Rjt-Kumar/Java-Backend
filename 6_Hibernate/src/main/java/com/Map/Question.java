@@ -62,4 +62,8 @@ public class Question{
         this.id = id;
         this.question = name;
     }
+    @Override
+    public String toString(){
+        return "ID : " + id;
+    }
 }
