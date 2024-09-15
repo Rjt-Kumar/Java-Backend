@@ -18,15 +18,15 @@ public class JOINsHQL{
         Session session = fact.openSession();
 
         // INNER JOIN
-//        String inner_Join = "Select q from Answer a Left Join a.question q";
-//        Query q = session.createQuery(inner_Join);
-////        List<Object[]> list = q.getResultList();
-////        System.out.println(list.size());
-//
-////        for(Object[] obj : list){
-////            System.out.println(obj[0].getClass());
-////            System.out.println(obj[1].getClass());
-////        }
+            String inner_Join = "Select q from Answer a Left Join a.question q";
+        Query q = session.createQuery(inner_Join);
+        List<Object[]> list = q.getResultList();
+//        System.out.println("Rjt");
+
+        for(Object[] obj : list){
+            System.out.println(obj[0].getClass());
+            System.out.println(obj[1].getClass());
+        }
 //
 //        List<Object> list = q.getResultList();
 //        System.out.println(list.size());
@@ -51,17 +51,17 @@ public class JOINsHQL{
 //            }
 //            System.out.println();
 //        }
-
-        String leftJoin = "SELECT q FROM Answer a INNER JOIN a.question q";
-        Query q = session.createQuery(leftJoin);
-        List<Object> list = q.getResultList();
-
-        for(Object obj : list){
-            if( obj == null ){
-                System.out.printf("NULL");
-            }else System.out.print(obj + " ");
-            System.out.println("");
-        }
+//
+//        String leftJoin = "SELECT q FROM Answer a INNER JOIN a.question q";
+//        Query q = session.createQuery(leftJoin);
+//        List<Object> list = q.getResultList();
+//
+//        for(Object obj : list){
+//            if( obj == null ){
+//                System.out.printf("NULL");
+//            }else System.out.print(obj + " ");
+//            System.out.println("");
+//        }
         session.close();
         fact.close();
     }

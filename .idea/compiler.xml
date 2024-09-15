@@ -10,6 +10,7 @@
         <module name="3_JDBC" />
         <module name="ORM" />
         <module name="5_Spring_JDBC" />
+        <module name="7_SpringORM" />
         <module name="6_Hibernate" />
       </profile>
     </annotationProcessing>
