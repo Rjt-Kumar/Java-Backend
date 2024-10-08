@@ -6,14 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="8_0_Servlets" />
         <module name="3_JDBC" />
         <module name="7_StudentApplication" />
+        <module name="hibernate-example" />
         <module name="5_Spring_JDBC" />
         <module name="6_Hibernate" />
         <module name="DSA_Classe" />
         <module name="ORM" />
+        <module name="8_SpringMVC" />
         <module name="7_SpringORM" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

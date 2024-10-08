@@ -12,14 +12,22 @@
         <option value="$PROJECT_DIR$/6_Hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/7_SpringORM/pom.xml" />
         <option value="$PROJECT_DIR$/7_StudentApplication/pom.xml" />
+        <option value="$PROJECT_DIR$/8_SpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/8_0_Servlets/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectResources">
     <resource url="http://www.springframework.org/schema/beans/spring-beans.xsd" location="$PROJECT_DIR$" />
     <resource url="http://www.springframework.org/schema/p" location="$PROJECT_DIR$/4_Spring/spring-beans.xsd" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

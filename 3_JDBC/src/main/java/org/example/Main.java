@@ -1,18 +1,17 @@
 package org.example;
-<<<<<<< HEAD
+
 import java.sql.*;
-=======
 import javax.xml.stream.events.StartElement;
 import java.sql.*;
 import java.util.Arrays;
->>>>>>> origin/main
+
 
 public class Main {
     private static final String url = "jdbc:mysql://localhost:3306/dbforjdbc";
     private static final String username = "root";
     private static final String password = "cdrRjt@123";
     public static void main(String[] args) {
-<<<<<<< HEAD
+
 
         // Step 2 : (after adding mysql-connector ) load drivers
         try{
@@ -21,7 +20,7 @@ public class Main {
             e.printStackTrace();
         }
 
-=======
+
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
         }catch(ClassNotFoundException e){
@@ -48,7 +47,7 @@ public class Main {
         }catch(SQLException s){
             System.out.println(s.getMessage());
         }
->>>>>>> origin/main
+
 
     }
 
