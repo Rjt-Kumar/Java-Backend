@@ -14,8 +14,7 @@ public class ThirdServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
-        System.out.println("Third Servlet Working Fine");
+       resp.getWriter().print("doGet Method is working Fine");
     }
 
     @Override

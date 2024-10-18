@@ -15,12 +15,8 @@
         <option value="$PROJECT_DIR$/8_SpringMVC/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
         <option value="$PROJECT_DIR$/8_0_Servlets/pom.xml" />
+        <option value="$PROJECT_DIR$/8_1_ServletProject/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/untitled/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectResources">

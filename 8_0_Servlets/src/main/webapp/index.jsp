@@ -12,7 +12,7 @@
         </h1>
 
        <p> This is very informative </p>
-
+        <p> "<%= application.getContextPath() %> " </p>
        <form action=" <%= application.getContextPath() %>/third" method="post">
        <input name="user" type="text" placeholder="Username : "/>
        <input name="message" type="text" placeholder="Enter Message here : "/>
