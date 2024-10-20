@@ -20,8 +20,30 @@
       <version>5.0.0</version> <!-- Ensure the version matches your servlet container -->
       <scope>provided</scope>  <!-- 'provided' because the servlet container will provide the API -->
     </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.32</version> <!-- Ensure this is the correct version -->
+    </dependency>
+    <!-- JPA API -->
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>8_1_ServletProject</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>15</source>
+          <target>15</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
