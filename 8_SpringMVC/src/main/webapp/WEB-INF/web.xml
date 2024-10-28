@@ -19,6 +19,8 @@
 
     <servlet-mapping>
         <servlet-name>spring</servlet-name>
+
+        <!--/ denotes url pattern for dispatcher Servlet -->
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 

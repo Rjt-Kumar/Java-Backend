@@ -20,6 +20,11 @@
         <option value="$PROJECT_DIR$/8_3_Register_Login/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectResources">
     <resource url="http://www.springframework.org/schema/beans/spring-beans.xsd" location="$PROJECT_DIR$" />
